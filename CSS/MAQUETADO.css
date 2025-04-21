@@ -1,0 +1,204 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Hatton;
+    background-image: url(../IMG/TEATRO2.jpg);
+    background-color: rgb(27, 27, 27);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background-color: #8b1818;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
+
+.menu img {
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+    padding: 5px;
+}
+
+.menu h1 {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    justify-items: center;
+    display: inline-block;
+    margin-top: 90px;
+}
+
+.menu ul a {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    background: #cd904d;
+    border-radius: 5px;
+    margin: 9px;
+}
+
+article, section {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+
+aside {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+img {
+    display: block; 
+    margin: auto; 
+    height: 500px;
+    width: 800px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: larger;
+}
+
+hgroup {
+    padding: 20px;
+}
+
+time {
+    padding: 20px;
+    text-align: center;
+}
+
+address a {
+    padding: 20px;
+    margin: 150px;
+}
+
+a svg {
+    width: 50px;
+    height: 50px;
+    transition: .3s ease;
+}
+
+a svg:hover {
+    transform: scale(1.1);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.columna blockquote {
+    padding: 15px;
+    background: #cd904d;
+}
+
+footer {
+    background: #8b1818;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    img {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu h1 {
+        position: static;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .menu ul a {
+        margin: 5px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    address a {
+        margin: 30px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu h1 {
+        font-size: 1rem;
+    }
+
+    .menu ul a {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    img {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    hgroup {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: small;
+    }
+}
